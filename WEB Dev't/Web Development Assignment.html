@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info</title>
+    <style>
+        body {
+            background: linear-gradient(skyblue, limegreen);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 2px solid #444343;
+            padding: 8px;
+        }
+        th {
+            background-color: rgb(164, 218, 218);
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        .input-box {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Email Address</th>
+        </tr>
+        <tr>
+            <td>Cynthia Ainomugisha</td>
+            <td>0322484859</td>
+            <td>cynthia.ainomugisha@email.com</td>
+        </tr>
+        <tr>
+            <td>Aggrey Asingwire</td>
+            <td> 0327329451 </td>
+            <td>asingwireag@email.com</td>
+        </tr>
+        <tr>
+            <td>Christine Makeba</td>
+            <td> 0323015006 </td>
+            <td>makebatinah@email.com</td>
+        </tr>
+        <tr>
+            <td>Lucas J. Kimbugu</td>
+            <td> 0348755836 </td>
+            <td>kimbugulw@email.com</td>
+        </tr>
+        <tr>
+            <td>Agaba Jordan</td>
+            <td> 0334811265 </td>
+            <td>agabaj@email.com</td>
+        </tr>
+        <tr>
+            <td>Mary Mbaraga</td>
+            <td> 0373674791</td>
+            <td>mabaragamary@email.com</td>
+        </tr>
+        <tr>
+            <td>Farid Kasujja</td>
+            <td> 0386595970 </td>
+            <td>kasujjafaddy@email.com</td>
+        </tr>
+        <tr>
+            <td>Victoria Asiimwe</td>
+            <td> 0348433073 </td>
+            <td>victoria.asiimwe@email.com</td>
+        </tr>
+        <tr>
+            <td>Alexandra Kamatsiko</td>
+            <td> 0345940388 </td>
+            <td>kamatsikolex@email.com</td>
+        </tr>
+        <tr>
+            <td>John Wick Kayooro</td>
+            <td> 0382156730 </td>
+            <td>jwkayooro@email.com</td>
+        </tr>
+    </table>
+    <div class="wrapper">
+        <form action="#">
+            <h1>Add Contact Info</h1>
+            <div class="input-box">
+                <label for="elinya">Name:</label>
+                <input type="text" id="elinya" placeholder="Paul Kay">
+            </div>
+            <div class="input-box">
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+            </div>
+            <div class="input-box">
+                <label for="namba">Phone:</label>
+                <input type="tel" id="namba" placeholder="0300000000">
+            </div>
+            <div class="input-box">
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" placeholder="kay@email.com">
+            </div>
+            <div class="input-box">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Please insert Password">
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot Password</a>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div>
+        <form action="#">
+            <p>Please Select Your Age Group:</p>
+            <input type="radio" id="age1" name="age" value="18-24">
+            <label for="age1">18-24</label><br>
+            <input type="radio" id="age2" name="age" value="25-30">
+            <label for="age2">25-30</label><br>
+            <input type="radio" id="age3" name="age" value="31-40">
+            <label for="age3">31-40</label><br><br>
+            <input type="submit" value="Submit">
+            <br><br>
+            <label for="textarea">Additional Comments:</label>
+            <textarea id="textarea" name="text"></textarea>
+        </form>
+    </div>
+</body>
+</html>
